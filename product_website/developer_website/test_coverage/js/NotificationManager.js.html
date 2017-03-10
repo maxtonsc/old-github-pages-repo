@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/NotificationManager.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">js/</a> NotificationManager.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.36% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>41/53</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">50% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>9/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>5/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">77.36% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>41/53</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// Handles creating and destroying notifications based upon how
+// the data changes. Acts as an intermediary between the application
+// and the somewhat difficult to understand LocalNotification api.
+var NotificationManager = function(getData, setDataListener) {
+	
+	// On ready, a budget change, or an options change
+	setDataListener(["ready", "tomorrowBudget", "options"], function(type) {
+		// destroy and remake all notifications
+		// Note: This is surrounded by a try-catch so it won't crash a web browser
+		// that cannot access the notification plugin
+		var budget = getData('tomorrowBudget');
+		if(budget !== null) {
+			try {
+				cordova.plugins.notification.local.cancelAll(setAllNotifications);
+			} catch (e) {
+				// console.log("Attempted to set notifications: Budget = " + budget);
+<span class="cstat-no" title="statement not covered" >				setAllNotifications();</span>
+			}
+		}
+	});
+&nbsp;
+	function setAllNotifications() {
+		var options = getData('options');
+		var budget = getData('budget');
+		var tomorrowBudget = getData('tomorrowBudget');
+		var now = new Date();
+		var notificationTime;
+&nbsp;
+		// set morning at time if isNotifyMorning
+		<span class="missing-if-branch" title="else path not taken" >E</span>if(options.isNotifyMorning === 'On') {
+			notificationTime = new Date();
+			notificationTime = copyTimeOfDay(notificationTime, new Date(options.notifyMorningTime));
+			<span class="missing-if-branch" title="if path not taken" >I</span>if(notificationTime &lt; now) {
+<span class="cstat-no" title="statement not covered" >				notificationTime.setDate(notificationTime.getDate() + 1);</span>
+<span class="cstat-no" title="statement not covered" >				setNotification(1, "Budget", "Your budget is $" + tomorrowBudget, notificationTime);</span>
+			} else {
+				setNotification(1, "Budget", "Your budget is $" + budget, notificationTime);
+			}
+		}
+&nbsp;
+		// set night at time if isNotifyNight
+		<span class="missing-if-branch" title="else path not taken" >E</span>if(options.isNotifyNight === 'On') {
+			notificationTime = new Date();
+			notificationTime = copyTimeOfDay(notificationTime, new Date(options.notifyNightTime));
+			<span class="missing-if-branch" title="if path not taken" >I</span>if(notificationTime &lt; now) {
+<span class="cstat-no" title="statement not covered" >				notificationTime.setDate(notificationTime.getDate() + 1);</span>
+<span class="cstat-no" title="statement not covered" >				setNotification(2, "Track Spending", "Please track your spending for the day", notificationTime);</span>
+			} else {
+				setNotification(2, "Track Spending", "Please track your spending for the day", notificationTime);
+			}
+		}
+&nbsp;
+		// set assets at time and date if isNotifyAssets
+		<span class="missing-if-branch" title="else path not taken" >E</span>if(options.isNotifyAssets === 'On') {
+			notificationTime = new Date();
+			<span class="missing-if-branch" title="if path not taken" >I</span>if(options.notifyAssetsPeriod === 'Monthly') {
+<span class="cstat-no" title="statement not covered" >				notificationTime.setDate(1);</span>
+<span class="cstat-no" title="statement not covered" >				notificationTime.setHours(11);</span>
+<span class="cstat-no" title="statement not covered" >				notificationTime.setMinutes(0);</span>
+<span class="cstat-no" title="statement not covered" >				if(notificationTime &lt; now) {</span>
+<span class="cstat-no" title="statement not covered" >					notificationTime.setMonth(notificationTime.getMonth() + 1);</span>
+				}
+			} else {
+				var currentDay = notificationTime.getDay();
+				notificationTime.setDate(notificationTime.getDate() + (7 - currentDay) % 7);
+				notificationTime.setHours(11);
+				notificationTime.setMinutes(0);
+				<span class="missing-if-branch" title="if path not taken" >I</span>if(notificationTime &lt; now) {
+<span class="cstat-no" title="statement not covered" >					notificationTime.setDate(notificationTime.getDate() + 7);</span>
+				}
+			}
+			setNotification(3, "Check Assets", "Remember to check your assets!", notificationTime);
+		}
+	}
+&nbsp;
+	// Copy the time of day from the sourceDate to the destDate and return destDate
+	function copyTimeOfDay(destDate, sourceDate) {
+		var returnDate = new Date(destDate);
+		returnDate.setHours(sourceDate.getHours());
+		returnDate.setMinutes(sourceDate.getMinutes());
+		returnDate.setSeconds(sourceDate.getSeconds());
+		return returnDate;
+	}
+&nbsp;
+	// Wrapper around cordova's notification setting api
+	function setNotification(id, title, text, time) {
+		try {
+			time.setSeconds(0);
+			cordova.plugins.notification.local.schedule({
+			    id: id,
+	            title: title,
+	            text: text,
+	            at: time,
+	            icon: "file://img/icon.png"
+			});
+		} catch (e) {
+<span class="cstat-no" title="statement not covered" >			console.log("Setting Notification for time " + time);</span>
+		}
+	}
+&nbsp;
+};
+&nbsp;
+            </pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Mar 08 2016 12:51:36 GMT-0800 (PST)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

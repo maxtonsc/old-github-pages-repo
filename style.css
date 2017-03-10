@@ -1,0 +1,12 @@
+@import 'main.css';
+
+html {
+	background: #222;
+	height:100%;
+	background-position:fixed;
+	overflow-y:;
+}
+
+body {
+	background:none;
+}
