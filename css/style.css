@@ -240,3 +240,12 @@ article:not(:first-child){
 .wrapper:hover .text {
     opacity:1;
 }
+
+
+#March12Button:hover{
+	color:#333;
+}
+
+#March3Button:hover{
+	color:#333;
+}

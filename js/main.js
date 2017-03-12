@@ -12,8 +12,8 @@ $('.portfolio-filter').on( 'click', 'a', function(e) {
 
 window.onload = function(){
 	$container.isotope({filter:'*'});
-	$("#March7Button").click(function(){
-		blogpost("#March7Post");
+	$("#March12Button").click(function(){
+		blogpost("#March12Post");
 	});
 
 	$("#March3Button").click(function(){
@@ -29,6 +29,6 @@ window.onload = function(){
 
 function blogpost($contentName){
 	$("#March3Post").css("display","none");
-	$("#March7Post").css("display","none");
+	$("#March12Post").css("display","none");
 	$($contentName).css("display","block");
 }
