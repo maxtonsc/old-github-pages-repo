@@ -28,9 +28,12 @@ window.onload = function(){
 
 	$('.hover').mouseover(function() {
   $('.text').css("visibility","visible");
+
 });
 
 }
+
+
 
 
 function blogpost($contentName){
@@ -39,3 +42,45 @@ function blogpost($contentName){
 	$("#March12Post").css("display","none");
 	$($contentName).css("display","block");
 }
+
+
+function displayCV(){
+
+	$("body > *").fadeOut( 2000 );
+
+	function emptyBody() {
+    $('body > *').css("display","none");
+    $('html').css("background-color","#ffffff");
+    $('body').css("height","100%");
+    $("#CV").css("display","flex");
+    $("#CVTopDiv").css("display","flex");
+    $("#CVTopDiv").addClass("slideExpandUp");
+
+    	
+    setTimeout(function(){
+    	$("#CVMidDiv").css("display","flex");
+    	$("#CVMidDiv").addClass("slideExpandUp")}, 200);
+ 	
+ 	setTimeout(function(){
+ 		$("#CVBotDiv").css("display","flex");
+    	$("#CVBotDiv").addClass("slideExpandUp")}, 400);
+ 	}
+	setTimeout(emptyBody, 3000);
+
+}
+
+function displayBod(){
+	$("#CV  > *").fadeOut( 1000 );
+	
+	setTimeout(function(){
+    	$("#CV").css("display","none");
+    	$("#CVTopDiv").removeClass("slideExpandUp");
+		$("#CVMidDiv").removeClass("slideExpandUp");
+		$("#CVBotDiv").removeClass("slideExpandUp");
+ 	}, 1000);	
+	$('body > *:not(#CV)').fadeIn(2000).css("display","block");
+
+
+	
+}
+

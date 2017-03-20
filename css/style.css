@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Source+Sans+Pro:300,400,700');
 
 html {
-	background: #222;
+	background: #f5f5f5;
 	overflow-y:scroll;
+	margin:0;
+	height:100%;
 }
 
 body {
@@ -12,6 +14,34 @@ body {
 	line-height:1.5;
 	color: #333;
 	font-family: 'Source Sans Pro', sans-serif;
+
+	margin:0;
+	height:100%;
+
+	
+}
+
+
+body >*.animation {
+	-webkit-animation-play-state: paused;
+	animation-play-state:paused;
+    -webkit-animation: fadeIt 3s ease; 
+       -moz-animation: fadeIt 3s ease; 
+         -o-animation: fadeIt 3s ease; 
+            animation: fadeIt 3s ease;
+    -webkit-animation-fill-mode: forwards;
+    }
+
+
+
+
+@keyframes fadeIt {
+  0%   { 
+  opacity:1;
+}
+  100% { 
+	opacity: 0;
+}
 }
 
 
@@ -250,4 +280,67 @@ article:not(:first-child){
 }
 #March13Button:hover{
 	color:#333;
+}
+
+#CV{
+	display:none;
+	height:100%;
+	background-color: #f5f5f5;
+	flex: 0 0 25em;
+	align-items:center;
+	flex-direction:column;
+	
+}
+
+#CV > *{
+	visibility: hidden;
+	justify-content: center;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	height:50px;
+	
+}
+
+
+
+.slideExpandUp{
+	animation-name: slideExpandUp;
+	-webkit-animation-name: slideExpandUp;	
+
+	animation-duration: 1.6s;	
+	-webkit-animation-duration: 1.6s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease -out;
+
+	visibility: visible !important;	
+}
+
+@keyframes slideExpandUp {
+	0% {
+		transform: translateY(100%) scaleX(0.5);
+	}
+	30%{
+		transform: translateY(-8%) scaleX(0.5);
+	}	
+	40%{
+		transform: translateY(2%) scaleX(0.5);
+	}
+	50%{
+		transform: translateY(0%) scaleX(1.1);
+	}
+	60%{
+		transform: translateY(0%) scaleX(0.9);		
+	}
+	70% {
+		transform: translateY(0%) scaleX(1.05);
+	}			
+	80%{
+		transform: translateY(0%) scaleX(0.95);		
+	}
+	90% {
+		transform: translateY(0%) scaleX(1.02);
+	}	
+	100%{
+		transform: translateY(0%) scaleX(1);		
+	}
 }
