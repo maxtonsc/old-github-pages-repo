@@ -34,7 +34,9 @@ body >*.animation {
 
 
 
-
+#brand{
+    	padding-left:10px;
+    }
 @keyframes fadeIt {
   0%   { 
   opacity:1;
@@ -46,6 +48,7 @@ body >*.animation {
 
 #profilePic{
 	width:20%;
+	border-radius: 50%;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -65,10 +68,10 @@ p {
 		font-weight:bold;
 		font-size:20pt;
 	}
-	.brand-logo:{
+	#brand:{
 		color:#f5f5f5;
 	}
-.brand-logo:hover{
+#brand:hover{
 	text-decoration: none;
 	color:#f5f5f5;
 	background:none;
@@ -88,6 +91,12 @@ p {
 	text-decoration: none;
 }
 
+#tribar:hover{
+	text-decoration: none !important;
+}
+#tribarIcon:hover{
+	color:#5bc0de;
+}
 @media (max-width: 768px){
 	.navbar-nav>li>a{
 		margin-bottom:3px;
@@ -139,7 +148,7 @@ p {
 
 @media (max-width:1300px){
 	.text{
-	font-size:1.1em;
+	font-size:1em;
 }
 }
 @media (max-width:992px){
@@ -147,7 +156,7 @@ p {
 		font-size:72px;
 	}
 		.text{
-	font-size:1em;
+	font-size:0.8em;
 }
 
 }
@@ -173,8 +182,16 @@ p {
 		margin-top:-100px;
 	}
 
-    .navbar-pills li{
-    	font-size:6pt;
+    #fadeInPort > * > div > ul > li{
+    	font-size:3pt;
+    }
+
+    a.button-collapse > i:hover{
+    	text-decoration: none;
+    }
+
+    .brand-logo{
+    	display:none !important;
     }
 
 }
@@ -186,6 +203,9 @@ p {
 }
 .nav-pills{
 	display:flex;
+	
+	max-width:100%;
+	max-height:100%;
 	justify-content: center;
 	
 }
