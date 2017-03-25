@@ -44,10 +44,16 @@ body >*.animation {
 }
 }
 
+#profilePic{
+	width:20%;
+}
 
 h1,h2,h3,h4,h5,h6 {
 	font-family: 'Abril Fatface', cursive;
 	margin-top:0;
+}
+h1{
+	margin-bottom:0;
 }
 
 p {
@@ -150,7 +156,16 @@ p {
 	}
 		.text{
 	font-size:1.5em;
-}
+	}
+
+	.parallax img{
+		bottom:-150px;
+	}
+	.parallax-container{
+		z-index: 9999;
+		margin-top:-100px;
+	}
+
 }
 
 
@@ -158,9 +173,13 @@ p {
 	padding:10px 15px 10px 0;
 	font-weight:bold;
 }
-
+.nav-pills{
+	display:flex;
+	justify-content: center;
+	font-size:16pt;
+}
 .nav-pills > li.active > a, .nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{
-	background:#111;
+	background:#333;
 	color:#f5f5f5;
 }
 
