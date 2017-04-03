@@ -11,6 +11,8 @@ $('.portfolio-filter').on( 'click', 'a', function(e) {
 });
 
 window.onload = function(){
+
+
 	$container.isotope({filter:'*'});
 
 
@@ -59,6 +61,9 @@ function displayCV(){
     $("#CV").css("display","flex");
     $("#CVTopDiv").css("display","flex");
     $("#CVTopDiv").addClass("slideExpandUp");
+    $(".resumePDF").css("visibility","visible");
+    $(".resumePDF").css("display","none");
+    $(".resumePDF").fadeIn(4000).css("display","flex");
 
     	
     setTimeout(function(){
@@ -74,8 +79,7 @@ function displayCV(){
 }
 
 function displayBod(){
-	$("#CV  > *").fadeOut( 1000 );
-	
+	$("#CV").fadeOut( 1000 );
 	setTimeout(function(){
     	$("#CV").css("display","none");
     	$("#CVTopDiv").removeClass("slideExpandUp");
@@ -84,7 +88,5 @@ function displayBod(){
  	}, 1000);	
 	$('body > *:not(#CV)').fadeIn(2000).css("display","block");
 
-
-	
 }
 
