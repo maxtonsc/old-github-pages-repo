@@ -144,12 +144,19 @@ p {
 	.text{
 	font-size:1.5em;
 }
+	.imageHolder{
+		margin-left:100px;
+		margin-right:100px;
+	}
 }
 
 @media (max-width:1300px){
 	.text{
 	font-size:1em;
 }
+.imageHolder{
+		margin:0;
+	}
 }
 @media (max-width:992px){
 	.jumbotron h1{
@@ -158,10 +165,9 @@ p {
 		.text{
 	font-size:0.8em;
 }
-		#CV > *{
-			width:120%;
-			height:200%;
-		}
+.imageHolder{
+		margin:0;
+	}
 
 }
 @media (max-width:768px){
@@ -197,6 +203,10 @@ p {
     .brand-logo{
     	display:none !important;
     }
+
+    .imageHolder{
+		margin:0;
+	}
 
 }
 
@@ -339,19 +349,7 @@ article:not(:first-child){
 	color:#333;
 }
 
-#CV{
-	display:none;
-	background-color: #d3d3d3;
-	flex: 0 0 25em;
-	align-items:center;
-	flex-direction:column;
-	
-}
 
-#CV > *{
-	visibility: hidden;
-	justify-content: center;
-}
 
 
 
@@ -402,5 +400,29 @@ article:not(:first-child){
 .resumePDF{
 	display:flex;
 	flex-direction: column;
-	height:1000px;
+	width:100%;
+	height:100%;
+
+}
+
+
+
+#CV{
+	display:none;
+	background-color: #d3d3d3;
+	flex: 0 0 25em;
+	align-items:center;
+	flex-direction:column;
+	
+}
+
+#CV > *{
+	visibility: hidden;
+	justify-content: center;
+}
+
+#CVTopDiv{
+	position: fixed;
+	top:0;
+	right:10%;
 }
