@@ -12,6 +12,9 @@ $('.portfolio-filter').on( 'click', 'a', function(e) {
 
 window.onload = function(){
 
+	$('#tribarIcon').click(function(){
+		$('.side-nav').css('visibility','visible');
+	});
 
 	$container.isotope({filter:'*'});
 
@@ -74,12 +77,15 @@ function displayCV(){
 }
 
 function displayBod(){
+
+	$(".side-nav").css('visibility','hidden');
 	$("#CV").fadeOut( 500 );
 	setTimeout(function(){
     	$("#CV").css("display","none");
     	$("#CVTopDiv").removeClass("slideExpandUp");
  	}, 1000);	
 	$('body > *:not(#CV)').fadeIn(1300).css("display","block");
+ 	document.elementFromPoint(0, 0).click();
 
 }
 
