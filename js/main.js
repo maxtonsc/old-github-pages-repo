@@ -77,7 +77,6 @@ function displayCV(){
 }
 
 function displayBod(){
-
 	$(".side-nav").css('visibility','hidden');
 	$("#CV").fadeOut( 500 );
 	setTimeout(function(){
