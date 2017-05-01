@@ -434,3 +434,20 @@ article:not(:first-child){
 	top:0;
 	right:10%;
 }
+
+.flexContainer{
+	justify-content: center;
+    display: -webkit-flex;
+    display: flex;
+    min-width: 400px;
+    width:90%;
+    min-height: 250px;
+    height:90%;
+}
+
+.flexElement {
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    background-color: cornflowerblue;
+}
