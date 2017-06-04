@@ -53,11 +53,13 @@ function billInfoProc(responseInfo,  currBillVal){
 	//Lead of Bill
 	var billLeadRegex = /(mps\-and\-electorates\/members\-of\-parliament\/document)[^\<]*/g;
 	var billLeadFound = responseInfo.match(billLeadRegex);
-	for (var c=0; c<billLeadFound.length; c++){
-		var cleanBillRegex = /[a-zA-Z\' ]+(\, )[a-zA-Z\' ]+/
-		var cleanBillLead = billLeadFound[c].match(cleanBillRegex);
-		dictBillInfo[currBillVal]["BillLeader"]=cleanBillLead[0];
-		
+	if (billLeadFound!= null){
+		for (var c=0; c<billLeadFound.length; c++){
+			var cleanBillRegex = /[a-zA-Z\' ]+(\, )[a-zA-Z\' ]+/
+			var cleanBillLead = billLeadFound[c].match(cleanBillRegex);
+			dictBillInfo[currBillVal]["BillLeader"]=cleanBillLead[0];
+			
+		}
 	}
 	// Bill Digest Link
 	var fullBillLinkRegex = /[a-zA-Z0-9 \/\-\_]*(tab\/digest)/g;
