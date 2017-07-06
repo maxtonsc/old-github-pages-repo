@@ -1,6 +1,7 @@
 @import 'main.css';
 
-body{background-color: #FFF;
+body{
+	background-color: #FFF;
 font-family: 'Roboto', sans-serif;
 }
 
@@ -28,10 +29,12 @@ body > div.navbar-fixed > nav > div > ul> li > a{
     min-height: 200px;
     height:90%;
 }
+
 .material-icons{
 	font-size:0.75em;
 	color:rgb(214,55,148);
 }
+
 .flexElement {
     width: 80%;
     height: 80%;
@@ -69,19 +72,16 @@ body > div.navbar-fixed > nav > div > ul> li > a{
 }
 #pageBlock{
 	display: flex;
-	
 }
 
 #pageColumns{
 	display:flex;
 	justify-content: center;
 	padding-top:30px;
-
 }
 
 
 hr{
-
     border-top: 1px solid rgb(214,55,148);
 
 }
@@ -95,7 +95,6 @@ h1{
 }
 
 h2{
-	/*color:rgb(1,126,190);*/
 	color:rgb(214,55,148);
 	margin-left:30px;
 }
