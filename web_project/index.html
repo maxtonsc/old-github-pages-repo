@@ -1,0 +1,259 @@
+    <!doctype html>
+    <html class="no-js" lang="">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <!-- Place favicon.ico in the root directory -->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/style.css"/>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>  
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+      <script>
+        $(document).ready(function(){
+          $('.parallax').parallax();
+          $(".button-collapse").sideNav();
+        });
+
+        $(document).ready(function(){
+          var options = [
+          {selector: '#fadeInJumbo', offset: 200, callback: function(el) {
+            Materialize.fadeInImage($(el));
+          } },   
+          {selector: '#fadeInPort', offset: 200, callback: function(el2) {
+            Materialize.fadeInImage($(el2));
+          } } 
+          ];
+          Materialize.scrollFire(options);
+        });
+      </script>
+
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    </head>
+    <body>
+
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo" id="brand"><img src="icon.png" id="icon"></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse" id="tribar"><i class="material-icons"></i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="waves-effect waves-light scroll" href="#AboutUs">About GenieOS</a></li>
+              <li><a class="waves-effect waves-light scroll" href="#Profiles">Team</a></li>
+              <li><a class="waves-effect waves-light scroll" href="#Footer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+
+      <div class="container-fluid text-center" id="fadeInJumbo" style="opacity: 0">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-3">
+              <div class= "parallax-container">
+                <h2> <span id='bannerText'>GenieOS will be to analytics what Xero is to accounting </span></h2>
+                <div class="parallax"><img id ="profilePic"   src="tablet.JPG"></div></div>
+              </div>
+            </div>
+          </div>
+      </div>
+  <a id="AboutUs"></a>
+
+      <div id="pageColumns">
+      
+
+          <div class="infoContainer">
+            <div class="infoSection">
+              <h1>About Genie<span class="pinkOS">OS</span></h1>
+              <p class="infoText">
+                GenieOS is a simple to use, affordable, cloud based data analytics platform focused on small to medium enterprise. Our goal is to make the platform so intuitive that GenieOS can be used in-house by any business without requiring specialist infrastructure or HR. Utilising Semantic tools to extract and infer meaning from data, meeting business’ needs to harness real value from complexity; making technology work for business.
+
+              </br>
+            </br>
+            Ultimately everyone will be able to build their own solution and extract value from their data assets.  
+          </p>
+        </div>
+      </div>
+      <div class="verticalLine">
+  </div>
+
+   
+      <div class="infoContainer">
+
+        <div class="infoSection">
+          <h1>Problem</h1>
+          <p class="infoText">
+            There is a ‘data gap’ where organisations have the data but lack an easy to use independent decision environment designed for non-technical users.
+
+            Currently there is significant cost and effort to gain insight from your data. 
+
+            No one in the market is developing a solution that can affordably allow SME’s to analyse and gain insight from their information. 
+
+            </br>
+            </br>
+            IDC predicts that worldwide revenues just for big data and analytics will grow to more than $203B by 2020.
+
+          </p>
+        </div>
+      </div>
+      <div class="verticalLine">
+  </div>
+
+
+      <div class="infoContainer">
+        <div class="infoSection"><h1>Solution</h1><p class="infoText">
+          We are entering a new era of exponentially improved interactions between technology and business via semantic and machine learning tools.
+        </p>
+        <ul id="listStyle">
+         <i class="material-icons">play_arrow</i><b>Intelligent</b> - machine based decisions 
+         <li class="listInfo">Utilising semantics to develop a unique approach to data analytics</li>
+         <i class="material-icons">play_arrow</i><b>Usability</b> - beautiful intuitive design 
+         <li class="listInfo">Simple UI using machine learning to make data analytics accessible to all</li>
+         <i class="material-icons">play_arrow</i><b>Velocity</b> - trusted insight in real time 
+         <li class="listInfo">Business Intelligence value from fast data</li>
+         <i class="material-icons">play_arrow</i><b>Loyalty</b> - building a data community
+         <li class="listInfo">Open platform integrating with 3rd parties’ data and tools</li>
+
+       </ul>
+
+     </div>
+
+    </div>
+
+    </div>
+    <hr>
+
+
+
+
+    <div class="infoContainer">
+      <p> Hover to see image from GenieOS</p>
+      <img src="screen1.JPEG" id="graphIMG">
+
+    </div>
+  </br>
+  <a id="Profiles"></a>
+  <hr>
+
+  <h1> Team</h1>
+
+  <div id="profileSection">
+  <div class="profile">
+    <img class= "profPic" src="Dougal.JPG">
+    <p class="pinkOS"><span class='nameLarge'>Dougal Watt</span>
+    </br>
+    <span class='nameText'>Head of Technology
+    </span>
+    </p>
+    <p>Dougal has worked for IBM as their Chief Technologist for the past 11 years, where he created significant intellectual property with patents to IBM. </p>
+    <div class="profileFooter">
+      <a href="https://www.linkedin.com/in/dougalwatt/" class="linkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+ <div class="verticalLine">
+  </div>
+
+  <div class="profile">
+    <img class= "profPic" src="George.JPG">
+    <p class="pinkOS"><span class='nameLarge'>George Adam</span>
+    </br>
+    <span class='nameText'>Head of Commercial
+    </span>
+    </p>
+    <p>George has 30 years in senior Sales and Marketing roles in several countries, particularly in new product and new market launches in B2B. </p>
+    <div class="profileFooter">
+      <a href="https://www.linkedin.com/in/george-adam-5352b8a8/" class="linkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+
+  <div class="verticalLine">
+  </div>
+
+    <div class="profile">
+    <img class= "profPic" src="Rachel.JPG">
+    <p class="pinkOS"><span class='nameLarge'>Rachel Hughes</span>
+    </br>
+    <span class='nameText'>Head of Operations
+    </span>
+    </p>
+    <p>In the past 10 years Rachel has worked with a range of New Zealand startups in Operational and Leadership roles. </p>
+    <div class="profileFooter">
+      <a href="https://www.linkedin.com/in/rachel-hughes-521345a0/" class="linkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="verticalLine">
+  </div>
+
+
+
+    <div class="profile">
+    <img class= "profPic" src="Arron.JPG">
+    <p class="pinkOS"><span class='nameLarge'>Arron Judson</span>
+    </br>
+    <span class='nameText'>Head of Operations
+    </span>
+    </p>
+    <p>Arron has over 25 years’ experience in the ICT and startup ecosystems, he will lead the Strategy and be the interface with our development partners </p>
+    </br>
+    <div class="profileFooter">
+      <a href="https://www.linkedin.com/in/arronjudson/" class="linkedIn">LinkedIn</a>
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+
+    <a id="Footer"></a>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">GenieOS</h5>
+            <p class="grey-text text-lighten-4">For more information contact</br>George Adam, Head of Commercial</br> <a href="mailto:george.adam@genieos.com" id="emailLink">george.adam@genieos.com  </a> 
+
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/dougalwatt/">Dougal Watt Linkedin</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/george-adam-5352b8a8/">George Adam Linkedin</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/rachel-hughes-521345a0/
+                ">Rachel Hughes Linkedin</a></li>
+                <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/arronjudson/">Arron Judson Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            Website built by Maxton: maxtonsc@gmail.com
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+    </body>
+    </html>

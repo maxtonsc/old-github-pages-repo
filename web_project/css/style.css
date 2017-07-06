@@ -1,0 +1,221 @@
+@import 'main.css';
+
+body{background-color: #FFF;
+font-family: 'Roboto', sans-serif;
+}
+
+.nav-wrapper{
+	background-color: rgb(255,255,255);
+}
+
+.navbar-brand,.navbar-nav > li > a{
+		color:#23527c;
+		font-weight:bold;
+		font-size:3em;
+	}
+body > div.navbar-fixed > nav > div > ul> li > a{
+	color:rgb(58,65,137);
+	font-weight:bold;
+	font-size:1.7em;
+}
+
+.flexContainer{
+	justify-content: center;
+    display: -webkit-flex;
+    display: flex;
+    min-width: 400px;
+    width:90%;
+    min-height: 200px;
+    height:90%;
+}
+.material-icons{
+	font-size:0.75em;
+	color:rgb(214,55,148);
+}
+.flexElement {
+    width: 80%;
+    height: 80%;
+    margin: 10px;
+    background-color: cornflowerblue;
+}
+
+
+#profileSection{
+
+	display:flex;
+	justify-content: space-between;
+	padding-bottom: 20px;
+	margin:20px;
+}
+
+.profile{
+	width:20%;
+	position:relative;
+	
+}
+
+.profPic{
+	width:200px;
+	height:auto;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	border-radius: 1px;
+}
+
+#infoBlock{
+
+	width:100%;
+	background-color: #EEE;
+	padding-top:1px;
+}
+#pageBlock{
+	display: flex;
+	
+}
+
+#pageColumns{
+	display:flex;
+	justify-content: center;
+	padding-top:30px;
+
+}
+
+
+hr{
+
+    border-top: 1px solid rgb(214,55,148);
+
+}
+
+h1{
+	text-align: center;
+	font-size:2.3em;
+	color:rgb(58,65,137);
+	margin-bottom:0;
+	padding-bottom: 0;
+}
+
+h2{
+	/*color:rgb(1,126,190);*/
+	color:rgb(214,55,148);
+	margin-left:30px;
+}
+
+#bannerText{
+	background-color: #333;
+}
+#emailLink{
+	color:#f5f5f5;
+}
+
+#icon{
+	height:100%;
+	margin-bottom:10px;		
+}
+
+#brand{
+	height:100%;
+	margin-left:5px;
+}
+ .pinkOS{
+ 	color:rgb(214,55,148);
+ }
+
+.verticalLine {
+  border-left:  solid rgb(214,55,148);
+}
+
+.infoBlocks{
+	display: flex;
+	justify-content: center;
+}
+
+.infoSection{
+	display:flex;
+	flex-direction:column;
+	width:80%;
+}
+
+.infoContainer{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	min-width:30%;
+}
+
+.parallax-container{
+	height:380px;
+}
+
+#listStyle{
+	text-align:left;
+	font-size:1.2em;
+}
+
+
+.page-footer{
+	background-color: rgb(214,55,148);
+
+}
+
+p{
+	font-size:1.2em;
+}
+
+
+.listInfo{
+	font-size:0.9em;
+}
+
+#graphIMG:hover {
+    transform: scale(1.7, 1.7); /** default is 1, scale it to 1.5 */
+    opacity: 1;
+    z-index:99;
+    border-radius: 2px;
+}
+
+#graphIMG{
+	width:500px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	position: relative;
+	opacity: 0.65;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+.linkedIn{
+position: absolute;
+   bottom: 0;
+   right: 0;
+	color:rgb(58,65,137);
+	font-size:1.4em;
+}
+
+.linkedIn:hover{
+	color:rgb(214,55,148);
+
+}
+
+.profileFooter{
+	display: flex;
+	align-content: flex-end;
+}
+
+
+.nameLarge{
+	font-size:1.3em;
+	font-weight:700;
+
+}
+
+
+.nameText{
+	font-weight:400;
+}
+
+body > footer > div.container > div > div.col.l6.s12 > p
+{
+	font-size:1em;
+}
+
+
