@@ -30,10 +30,7 @@ body > div.navbar-fixed > nav > div > ul> li > a{
     height:90%;
 }
 
-.material-icons{
-	font-size:0.75em;
-	color:rgb(214,55,148);
-}
+
 
 .flexElement {
     width: 80%;
@@ -82,7 +79,8 @@ body > div.navbar-fixed > nav > div > ul> li > a{
 
 
 hr{
-    border-top: 1px solid rgb(214,55,148);
+    border-top: 1px solid;
+    color:#666666;
 
 }
 
@@ -95,12 +93,12 @@ h1{
 }
 
 h2{
-	color:rgb(214,55,148);
-	margin-left:30px;
+	color:floralwhite;
+	margin-left:80px;
 }
 
 #bannerText{
-	background-color: #333;
+	font-weight:900;
 }
 #emailLink{
 	color:#f5f5f5;
@@ -115,12 +113,9 @@ h2{
 	height:100%;
 	margin-left:5px;
 }
- .pinkOS{
- 	color:rgb(214,55,148);
- }
 
 .verticalLine {
-  border-left:  solid rgb(214,55,148);
+  border-left:  solid #666666;
 }
 
 .infoBlocks{
@@ -142,7 +137,7 @@ h2{
 }
 
 .parallax-container{
-	height:380px;
+	height:420px;
 }
 
 #listStyle{
@@ -152,7 +147,7 @@ h2{
 
 
 .page-footer{
-	background-color: rgb(214,55,148);
+	background-color: #333;
 
 }
 
@@ -204,12 +199,14 @@ position: absolute;
 .nameLarge{
 	font-size:1.3em;
 	font-weight:700;
+	color:rgb(58,65,137);
 
 }
 
 
 .nameText{
 	font-weight:400;
+	color:rgb(58,65,137);
 }
 
 body > footer > div.container > div > div.col.l6.s12 > p
@@ -218,3 +215,10 @@ body > footer > div.container > div > div.col.l6.s12 > p
 }
 
 
+
+
+.material-icons{
+	font-size:15px !important;
+
+	color:rgb(58,65,137);
+}
